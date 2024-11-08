@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account - Shema Michael School</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <img src="school logo.webp" alt="Shema Michael School Logo" class="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="create-account-form">
+            <h1>Create Account</h1>
+            <p>Fill out the form below to create a new account. Please provide accurate information to ensure proper registration.</p>
+            <form id="createAccountForm" action="#" onsubmit="return handleAccountCreation();">
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" required>
+                
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password" required>
+                
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+    </main>
+</div>
+
+<footer>
+    <p>&copy; 2024 Shema Michael School. All rights reserved.</p>
+</footer>
+
+<!-- Include JavaScript -->
+<script src="script.js"></script>
+<script>
+// Function to handle account creation
+function handleAccountCreation() {
+    const fullName = document.getElementById('full-name').value;
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const confirmPassword = document.getElementById('confirm-password').value;
+
+    // Basic validation (could be improved)
+    if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        return false;
+    }
+
+    // Simulate account creation
+    alert("Account created successfully! You can now log in, " + fullName + ".");
+
+    // Redirect to the login page
+    window.location.href = "login.html";
+    return false; // Prevent form submission
+}
+</script>
+</body>
+</html>

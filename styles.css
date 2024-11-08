@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a; /* Dark Grey */
+    color: #f5f5f5; /* White */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+.container {
+    flex: 1;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding-bottom: 20px; /* Add spacing at bottom */
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #333; /* Medium Dark Grey */
+}
+
+header .logo {
+    width: 120px; /* Adjust logo size */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 30px; /* Increased spacing between nav items */
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background-color: #444; /* Dark Grey */
+    text-align: center;
+    padding: 80px 20px; /* Increased padding */
+    margin-bottom: 20px; /* Space below hero section */
+}
+
+.hero h1 {
+    font-size: 2.8em; /* Increased font size */
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.4em; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+.hero-btn {
+    padding: 12px 24px; /* Increased padding */
+    background-color: #555; /* Light Dark Grey */
+    color: #f5f5f5;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.about {
+    padding: 40px 20px; /* Increased padding */
+    background-color: #2a2a2a; /* Light Grey */
+    line-height: 1.6;
+    margin-bottom: 20px; /* Space below about section */
+}
+
+.about h2 {
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 15px;
+}
+
+.about p {
+    font-size: 1.2em; /* Increased font size */
+    text-align: justify;
+}
+
+.login-form, .contact-form, .create-account-form {
+    padding: 40px 20px; /* Increased padding */
+    background-color: #2a2a2a; /* Light Grey */
+    margin-bottom: 20px; /* Space below form sections */
+}
+
+.login-form h1, .contact-form h1, .create-account-form h1 {
+    font-size: 2.5em; /* Increased font size */
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Added spacing between form items */
+}
+
+input, textarea, button {
+    padding: 12px; /* Increased padding */
+    border-radius: 5px;
+    border: 1px solid #555;
+    background-color: #333; /* Dark input background */
+    color: #f5f5f5;
+    font-size: 1em; /* Increased font size */
+}
+
+button {
+    background-color: #555; /* Light Dark Grey */
+    cursor: pointer;
+    border: none;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #666;
+}
+
+.create-account-btn {
+    color: #f5f5f5;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #333;
+    color: #f5f5f5;
+    text-align: center;
+    padding: 20px; /* Increased padding */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
